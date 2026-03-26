@@ -14,3 +14,9 @@ jobs:
 
       - name: Run a simple command
         run: echo "This is my Pipeline for YAML"
+
+      - name: first steps
+        run: echo "to learn steps"
+
+      - name: second steps
+        run: echo "second step"
