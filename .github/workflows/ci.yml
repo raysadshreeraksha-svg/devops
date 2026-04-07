@@ -1,8 +1,10 @@
 name: Simple Ci Pipeline
 
 on:
-  push:
-    branches: [ "main" ]
+   push:
+     branches: [ "main" ]
+   pull_request:
+     branches: [ "main" ]
 
 jobs:
   build:
@@ -24,8 +26,3 @@ jobs:
       - name: breaking step
         run: echo "pipeline is fixed"
 
-on:
-  push:
-    branches: ["main"]
-  pull_request:
-    branches: ["main"]        
